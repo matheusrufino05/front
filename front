@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Igreja da Família - Sede | Transformando Futuros</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#d4e4fa",
+                    "secondary-fixed-dim": "#ffb3b0",
+                    "on-error": "#690005",
+                    "on-primary": "#283044",
+                    "primary-container": "#0f172a",
+                    "surface-variant": "#273647",
+                    "primary": "#bec6e0",
+                    "surface-tint": "#bec6e0",
+                    "tertiary-fixed": "#ffdea2",
+                    "inverse-on-surface": "#233143",
+                    "tertiary-fixed-dim": "#fabc22",
+                    "secondary": "#ffb3b0",
+                    "secondary-fixed": "#ffdad8",
+                    "surface-dim": "#051424",
+                    "surface-container-lowest": "#010f1f",
+                    "background": "#051424",
+                    "tertiary": "#fabc22",
+                    "outline": "#909097",
+                    "on-background": "#d4e4fa",
+                    "error": "#ffb4ab",
+                    "on-tertiary-container": "#a57a00",
+                    "surface-container-highest": "#273647",
+                    "on-secondary": "#670211",
+                    "secondary-container": "#881d24",
+                    "on-tertiary-fixed": "#261900",
+                    "on-secondary-fixed-variant": "#881d24",
+                    "tertiary-container": "#211600",
+                    "surface-container-low": "#0d1c2d",
+                    "primary-fixed": "#dae2fd",
+                    "outline-variant": "#45464d",
+                    "on-surface-variant": "#c6c6cd",
+                    "on-primary-container": "#798098",
+                    "on-secondary-container": "#ff9996",
+                    "surface-container": "#122131",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-primary-fixed": "#131b2e",
+                    "on-tertiary": "#402d00",
+                    "on-secondary-fixed": "#410006",
+                    "surface-container-high": "#1c2b3c",
+                    "surface": "#051424",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-tertiary-fixed-variant": "#5c4200",
+                    "inverse-primary": "#565e74",
+                    "on-error-container": "#ffdad6",
+                    "error-container": "#93000a",
+                    "inverse-surface": "#d4e4fa",
+                    "surface-bright": "#2c3a4c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "display-lg": ["Manrope"],
+                    "display-lg-mobile": ["Manrope"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Manrope"],
+                    "label-sm": ["JetBrains Mono"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(18, 33, 49, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(250, 188, 34, 0.1), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(255, 179, 176, 0.1), transparent 40%);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary/30">
+<!-- Navegação Superior -->
+<nav class="docked full-width top-0 z-50 sticky bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 shadow-md border-b border-white/10">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Logo" class="w-10 h-10 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4wEIt5OnQBXGrIP_5Qrex6AIKMSMqTrFrQXFfOa3UIvWek3bBTzgSoNln9qeOO6hb8M-zVhM_84gqlGvpccZqq6ce02THYrByoPUk4KgzdiCds9N66fGgTPoCslt08e8BQMR27-rTO3CONnVJqvBcNKruu0Hk4gRjO2-l4YP8DF-3cKJyt8fNYomHJFU_3xXPTZnGRbVZJupLT0TcP6jRY4_pTLFzvUIfRqSe9jjBvSyxVKmhkmBeMxyg9RIkLdRNOKpX2yVbsEg"/>
+<div class="font-display-lg text-headline-md lg:text-display-lg text-secondary-fixed-dim tracking-tight">
+                    Igreja da Família - Sede
+                </div>
+</div>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="text-tertiary font-bold border-b-2 border-tertiary pb-1 font-body-md text-body-md" href="#">Cursos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Agenda</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Professores</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Eventos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Sobre Nós</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-primary dark:text-primary-fixed font-body-md text-body-md hover:bg-white/5 px-4 py-2 rounded-lg transition-all">Portal do Aluno</button>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-body-md text-body-md font-bold hover:shadow-[0_0_20px_rgba(255,179,176,0.4)] transition-all scale-95 active:scale-90">Matricule-se</button>
+</div>
+</div>
+</nav>
+<main class="relative">
+<!-- Seção Hero -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden hero-gradient">
+<div class="absolute inset-0 z-0">
+<img alt="Um grupo de estudantes e professores diversos interagindo em um ambiente de aprendizado futurista e tecnológico com mesas e telas digitais brilhantes." class="w-full h-full object-cover opacity-40 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDodWxGBAl0vN4IzHyE5j5LjQzHevbkRLwSX5P67C4ssoaY33qW4-VMmHjxTY8gwDIHhR_wP5yNoMcnPlbBSRBUm5gXwkNMab4f_6JEeFpuuTX9TqMS-meK3yG-BTG0o9vmNBsgKMpYlXrHiEunyOdkMEVpTc6cDl1EIQptd9qXeT1jGk6fHv5dCddy1LdYh8vtGud7Jz3_m3nGa1ZMmGWuWVDcpAvYPHDFpNyf07CAvFtK0ReeZNjk6_GZmBiS-XxETsZurKx46r8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Transformação Global</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface md:text-[64px] leading-tight">
+                        Conhecimento que <span class="text-secondary-fixed-dim">transforma</span> futuros
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Capacitando pessoas através da educação, fé e desenvolvimento para construir novas oportunidades. Uma jornada de excelência acadêmica e espiritual.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-headline-md text-headline-md font-bold hover:shadow-[0_0_30px_rgba(255,179,176,0.5)] transition-all flex items-center gap-2">
+                            Ver cursos disponíveis
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border-2 border-secondary text-secondary px-8 py-4 rounded-lg font-headline-md text-headline-md font-bold hover:bg-secondary/10 transition-all">
+                            Conheça a Sede
+                        </button>
+</div>
+</div>
+<!-- Cartão Flutuante (Estilo Bento) -->
+<div class="hidden lg:block lg:col-span-5 relative">
+<div class="glass-card p-8 rounded-xl animate-float relative z-10">
+<div class="flex justify-between items-start mb-12">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-tertiary">PRÓXIMO EVENTO</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">DNA da Liderança</h3>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">event</span>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-2 h-12 bg-tertiary rounded-full"></div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">PROGRESSO ATUAL</p>
+<p class="font-body-md text-body-md">Inovação em Teologia</p>
+</div>
+<span class="ml-auto font-label-sm text-label-sm text-tertiary">85%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[85%] shadow-[0_0_10px_#fabc22]"></div>
+</div>
+</div>
+</div>
+<!-- Brilho Decorativo -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary/20 rounded-full blur-[80px]"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-tertiary/20 rounded-full blur-[80px]"></div>
+</div>
+</div>
+</section>
+<!-- Seção de Estatísticas -->
+<section class="py-20 relative bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div class="space-y-2 group cursor-default">
+<div class="font-display-lg text-[56px] text-primary group-hover:text-secondary-fixed-dim transition-colors duration-500" id="count-students">+500</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Alunos Ativos</div>
+</div>
+<div class="space-y-2 group cursor-default border-l border-outline-variant/30">
+<div class="font-display-lg text-[56px] text-tertiary group-hover:text-primary transition-colors duration-500" id="count-courses">+20</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Cursos de Elite</div>
+</div>
+<div class="space-y-2 group cursor-default border-l border-outline-variant/30">
+<div class="font-display-lg text-[56px] text-secondary group-hover:text-tertiary transition-colors duration-500" id="count-teachers">+10</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Mestres e Doutores</div>
+</div>
+<div class="space-y-2 group cursor-default border-l border-outline-variant/30">
+<div class="font-display-lg text-[56px] text-on-surface group-hover:text-secondary transition-colors duration-500" id="count-years">+5</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Anos de Excelência</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Grid Bento de Cursos em Destaque -->
+<section class="py-24 max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div class="space-y-4">
+<h2 class="font-display-lg text-display-lg text-on-surface">Explorar Caminhos</h2>
+<p class="text-on-surface-variant font-body-lg text-body-lg max-w-xl">Curadoria exclusiva de cursos desenvolvidos para impulsionar seu crescimento pessoal, espiritual e profissional.</p>
+</div>
+<a class="hidden md:flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all" href="#">
+                    Ver todos os cursos
+                    <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card de Curso 1 -->
+<div class="glass-card rounded-xl overflow-hidden group hover:shadow-[0_0_40px_rgba(190,198,224,0.15)] transition-all duration-500">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuuAvME6uFxnXJ0ErMdHDpgnz2tqAWKtR3Dn2Uppy3jULHFUbTERDAcBJVra_46FdKheHchlvfUC8w_52qA1dSTqemVIV5b6In-TwMatdccDfX36fJe0s7bFdVv_fnhZGZuH15OijfO1ibtvhSK7l3sGfi3AdsZ_a1dFvL0lOGJok0DmR3z2f4jY47ZzwB5H6X0OYAHDmnY_F3dYOFmh1zBLBVeuwAML8Ruc6Pi6L23AbrBrckztVtcbia57riWs8yqjikLIOVX3I"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-tertiary px-3 py-1 rounded-full text-label-sm font-label-sm">BÍBLICO</span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-on-surface-variant px-3 py-1 rounded-full text-label-sm font-label-sm">SEMANAL</span>
+</div>
+</div>
+<div class="p-8 space-y-4">
+<h3 class="font-headline-md text-headline-md">Novo Lar</h3>
+<p class="text-secondary font-display-lg text-[24px]">Gratuito</p>
+<div class="pt-4 flex items-center justify-between">
+<button class="bg-secondary text-on-secondary px-4 py-2 rounded-lg font-label-sm text-label-sm hover:brightness-110 transition-all">QUERO ME INSCREVER</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 font-label-sm text-label-sm">
+                                SAIBA MAIS
+                                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card de Curso 2 -->
+<div class="glass-card rounded-xl overflow-hidden group hover:shadow-[0_0_40px_rgba(255,179,176,0.15)] transition-all duration-500 md:col-span-1">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa_GmEazx2OTsYR1ywNe0OJnXbSH4ks1AYnKo1FjEMvkG2m5vrRo46BhNrxaLPl7-LX-qKizbNg7TbH9URMRxYxYc3FBLR4ccs-9hMveRyHd7Vezxv3GrhZu88cylFAE8luY9K3IJOqNfjQqWDV37x1xOU3G5IMpWTuAqc6iBeBF8jXMzzBuLb-5N7RoNj4gtc7b0BenEpjeFodzBex3AkjCLfbMKQv_Y0_KMH_ZpIpfdSWJfJBz7YIMqW18wPf_-3HenKJtQr6Hk"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-secondary-fixed-dim px-3 py-1 rounded-full text-label-sm font-label-sm">CRESCIMENTO</span>
+</div>
+</div>
+<div class="p-8 space-y-4">
+<h3 class="font-headline-md text-headline-md">DNA da Liderança</h3>
+<p class="text-secondary font-display-lg text-[24px]">R$ 50,00</p>
+<div class="pt-4 flex items-center justify-between">
+<button class="bg-secondary text-on-secondary px-4 py-2 rounded-lg font-label-sm text-label-sm hover:brightness-110 transition-all">QUERO ME INSCREVER</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 font-label-sm text-label-sm">
+                                SAIBA MAIS
+                                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card de Curso 3 -->
+<div class="glass-card rounded-xl overflow-hidden group hover:shadow-[0_0_40px_rgba(250,188,34,0.15)] transition-all duration-500">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDODnW4NuD-jcNZjB5wSV3abClbNOauUQvI2V_K-qL7nw5f3P_DzC9TvrDBC-LboPaSksdRyFqXEcMrrHYmlIHlqGtj8PHnEDNnmhMrJja8Mp7K-7fgviFz_btRZJCa3TtKiBKJ3m804RfmLvysJZtatveFXQ6avaZ5HVQ8yTs-dfdqRfTodw3vnyFAayUOCJSo1Pj0aCBpjkkF_jr8ZdY6Sxf4Z1JoRevccS57HejHd6l9j-YumhhxqtMpBkeT05ntwvwn0urr29s"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-surface-container-lowest/80 backdrop-blur-md text-tertiary px-3 py-1 rounded-full text-label-sm font-label-sm">BÍBLICO</span>
+</div>
+</div>
+<div class="p-8 space-y-4">
+<h3 class="font-headline-md text-headline-md">Santidade Blindada</h3>
+<p class="text-secondary font-display-lg text-[24px]">R$ 30,00</p>
+<div class="pt-4 flex items-center justify-between">
+<button class="bg-secondary text-on-secondary px-4 py-2 rounded-lg font-label-sm text-label-sm hover:brightness-110 transition-all">QUERO ME INSCREVER</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 font-label-sm text-label-sm">
+                                SAIBA MAIS
+                                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Rodapé -->
+<footer class="full-width py-12 bg-surface-container-lowest dark:bg-black border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2 space-y-6">
+<div class="flex items-center gap-3">
+<img alt="Logo" class="w-10 h-10 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4wEIt5OnQBXGrIP_5Qrex6AIKMSMqTrFrQXFfOa3UIvWek3bBTzgSoNln9qeOO6hb8M-zVhM_84gqlGvpccZqq6ce02THYrByoPUk4KgzdiCds9N66fGgTPoCslt08e8BQMR27-rTO3CONnVJqvBcNKruu0Hk4gRjO2-l4YP8DF-3cKJyt8fNYomHJFU_3xXPTZnGRbVZJupLT0TcP6jRY4_pTLFzvUIfRqSe9jjBvSyxVKmhkmBeMxyg9RIkLdRNOKpX2yVbsEg"/>
+<div class="font-display-lg-mobile text-display-lg-mobile text-secondary">Igreja da Família - Sede</div>
+</div>
+<p class="text-on-surface-variant font-body-md text-body-md max-w-sm">
+                    Transformando futuros através do crescimento espiritual e intelectual. Nossa missão é fornecer educação ministerial de alto nível que desperta inovação e propósito.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-md text-headline-md text-on-surface">Links Rápidos</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Política de Privacidade</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Termos de Serviço</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Fale Conosco</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-md text-headline-md text-on-surface">Recursos</h4>
+<ul class="space-y-2">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Suporte</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Carreiras</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Comunidade</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-12 pt-8 border-t border-outline-variant/30 text-center">
+<p class="text-on-surface-variant font-label-sm text-label-sm">
+                © 2024 Igreja da Família - Sede. Todos os direitos reservados. Transformando futuros através do crescimento espiritual e intelectual.
+            </p>
+</div>
+</footer>
+<script>
+        // Observador de Interseção simples para animação do contador
+        const counters = [
+            { id: 'count-students', target: 500, prefix: '+' },
+            { id: 'count-courses', target: 20, prefix: '+' },
+            { id: 'count-teachers', target: 10, prefix: '+' },
+            { id: 'count-years', target: 5, prefix: '+' }
+        ];
+
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const statsSection = document.querySelector('#count-students').parentElement.parentElement;
+        observer.observe(statsSection);
+
+        function animateCounters() {
+            counters.forEach(counter => {
+                const element = document.getElementById(counter.id);
+                let current = 0;
+                const increment = counter.target / 50;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < counter.target) {
+                        element.innerText = counter.prefix + Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.innerText = counter.prefix + counter.target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+    </script>
+</body></html>
